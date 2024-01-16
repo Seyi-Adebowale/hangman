@@ -1,0 +1,102 @@
+*{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+h1{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 15px;
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+#wordDisplay{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px;
+}
+#guessForm{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin: 20px auto;
+}
+.score-board{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    outline: 4px solid black;
+    padding: 10px 20px 30px;
+    width: 450px;
+    margin: 30px auto;
+}
+.scores{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+}
+label, input{
+    margin-bottom: 5px;
+}
+#currentPlayer, #playerOne, #playerTwo{
+    padding: 10px 20px;
+    margin: 5px;
+}
+.player1-style{
+    outline: 2px solid red;
+    color: red;
+}
+.player2-style{
+    outline: 2px solid blue;
+    color: blue;
+}
+input{
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 18px;
+    border-radius: 14px;
+}
+button{
+    margin: auto;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border-width: 1px;
+    text-align: center;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer
+}
+.player1{
+    color: red;
+}
+.player2{
+    color: blue;
+}
+@media (max-width:500px){
+    .score-board{
+        width: 80%;
+    }
+    .scores{
+        flex-direction: column;
+    }
+    .player1{
+        margin-bottom: 40px;
+    }
+    #wordDisplay{
+        font-size: 40px;
+    }
+}
